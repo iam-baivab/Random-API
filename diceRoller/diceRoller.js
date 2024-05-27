@@ -1,6 +1,48 @@
 window.onload = function(){
-    alert("Internal Server Error \nSome features may not work properly")
+    showErrorToast('Internal Server Error 500');
 }
+
+const showErrorToast = (message) => {
+    const toastContent = document.createElement('div');
+    toastContent.classList.add('toast-content');
+
+    const icon = document.createElement('i');
+    icon.classList.add('fas', 'fa-exclamation-circle', 'toast-icon');
+    icon.style.paddingLeft = '10px';
+    toastContent.appendChild(icon);
+
+    const messageElement = document.createElement('span');
+    messageElement.textContent = message;
+    toastContent.appendChild(messageElement);
+
+    const toast = Toastify({
+        node: toastContent,
+        duration: 3000,
+        gravity: 'top',
+        position: 'center',
+        backgroundColor: 'red',
+        progressBar: true,
+        style: {
+            padding: '20px 2px',
+            borderRadius: '8px',
+        }
+    });
+
+    const setToastWidth = () => {
+        const messageWidth = message.length * 10;
+        toast.options.style.maxWidth = `${messageWidth}px`;
+
+        if (window.innerWidth <= 768) {
+            toast.options.style.margin = '0 15px';
+        }
+    };
+
+    setToastWidth();
+
+    window.addEventListener('resize', setToastWidth);
+
+    toast.showToast();
+};
 
 document.addEventListener("DOMContentLoaded", () => {
     const dice = document.getElementById("dice");
@@ -21,7 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchRandomNumber();
 
     // Call fetchRandomNumber when rollBtn is clicked
-    rollBtn.addEventListener("click", fetchRandomNumber);
+    rollBtn.addEventListener("click", fetchRandomNumber => {
+        showErrorToast('Internal Server Error 500');
+    });
 
     function updateDiceNumber(number) {
         const numberElements = dice.querySelectorAll('.number');
