@@ -1,11 +1,15 @@
 # Random-API
 
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 Welcome to Random-API, a collection of mini tools utilizing various APIs to provide random data and fun interactions. This project showcases how to integrate different public APIs into a single website using only HTML and JavaScript.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [APIs Used](#apis-used)
+- [Tools Without API](#tools-without-api)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -55,6 +59,16 @@ This project integrates the following APIs using JavaScript:
    - URL: [Visual Crossing Weather](https://weather.visualcrossing.com/)
    - Provides weather data for a specified location.
 
+## Tools Without API
+
+This project also includes the following tools that do not require external APIs:
+
+1. **Random Color Generator**
+   - Generates random colors for design purposes.
+
+2. **Dice Rolling**
+   - Simulates rolling a dice and displays the result.
+
 ## Usage
 
 The website is designed to run directly in your web browser without any server setup. Open the `index.html` file, and you can use each tool by interacting with the respective sections.
@@ -69,3 +83,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ```
 
 This version emphasizes that the website is built using HTML and JavaScript, and users can interact with the APIs directly from their web browsers without any server setup.
+```
+
+[license-shield]: https://img.shields.io/badge/License-MIT-red.svg
+[license-url]: https://github.com/iam-baivab/News-Scraping-using-BeautyfulSoup-Selenium-with-Django/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=blue
+[linkedin-url]: https://www.linkedin.com/in/baivabsarkar/
