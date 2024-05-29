@@ -1,0 +1,71 @@
+# Random-API
+
+Welcome to Random-API, a collection of mini tools utilizing various APIs to provide random data and fun interactions. This project showcases how to integrate different public APIs into a single website using only HTML and JavaScript.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [APIs Used](#apis-used)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+To get started with this project, simply clone or download the repository and open the `index.html` file in your web browser.
+
+```bash
+git clone https://github.com/iam-baivab/Random-API.git
+cd Random-API
+```
+
+## APIs Used
+
+This project integrates the following APIs using JavaScript:
+
+1. **Cat Facts API**
+   - URL: [Cat Facts](https://catfact.ninja/)
+   - Provides random cat facts.
+
+2. **Bored API**
+   - URL: [Bored API](https://www.boredapi.com/)
+   - Suggests random activities to cure boredom.
+
+3. **Random Number API**
+   - URL: [Random Number API](http://www.randomnumberapi.com/)
+   - Generates random numbers.
+
+4. **Dog CEO API**
+   - URL: [Dog CEO](https://dog.ceo/dog-api/)
+   - Provides random dog images.
+
+5. **Official Joke API**
+   - URL: [Official Joke API](https://official-joke-api.appspot.com/)
+   - Returns random jokes.
+
+6. **Hindi Jokes API**
+   - URL: [Hindi Jokes API](https://hindi-jokes-api.onrender.com/)
+   - Supplies random Hindi jokes.
+
+7. **API Ninjas Password Generator**
+   - URL: [API Ninjas](https://api.api-ninjas.com/v1/passwordgenerator)
+   - Generates random secure passwords.
+
+8. **Visual Crossing Weather API**
+   - URL: [Visual Crossing Weather](https://weather.visualcrossing.com/)
+   - Provides weather data for a specified location.
+
+## Usage
+
+The website is designed to run directly in your web browser without any server setup. Open the `index.html` file, and you can use each tool by interacting with the respective sections.
+
+## Contributing
+
+Contributions are welcome! If you have any improvements, suggestions, or bug fixes, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
+
+This version emphasizes that the website is built using HTML and JavaScript, and users can interact with the APIs directly from their web browsers without any server setup.
