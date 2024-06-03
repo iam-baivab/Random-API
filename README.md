@@ -59,6 +59,10 @@ This project integrates the following APIs using JavaScript:
    - URL: [Visual Crossing Weather](https://weather.visualcrossing.com/)
    - Provides weather data for a specified location.
 
+9. **Dice Rolling**
+   - URL: [Rrandom/integers](https://www.random.org/integers/)
+   - Simulates rolling a dice and displays the result.
+
 ## Tools Without API
 
 This project also includes the following tools that do not require external APIs:
