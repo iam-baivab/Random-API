@@ -5,9 +5,12 @@
 
 Welcome to Random-API, a collection of mini tools utilizing various APIs to provide random data and fun interactions. This project showcases how to integrate different public APIs into a single website using only HTML and JavaScript.
 
+<img src="assets\readme1.png">
+
 ## Table of Contents
 
 - [Installation](#installation)
+- [UI](#website-ui)
 - [APIs Used](#apis-used)
 - [Tools Without API](#tools-without-api)
 - [Usage](#usage)
@@ -23,6 +26,9 @@ git clone https://github.com/iam-baivab/Random-API.git
 cd Random-API
 ```
 
+## UI 🌐 [Live View](https://randomapi.pages.dev/)
+<img src="assets\readme2.png">
+
 ## APIs Used
 
 This project integrates the following APIs using JavaScript:
@@ -35,33 +41,29 @@ This project integrates the following APIs using JavaScript:
    - URL: [Bored API](https://www.boredapi.com/)
    - Suggests random activities to cure boredom.
 
-3. **Random Number API**
-   - URL: [Random Number API](http://www.randomnumberapi.com/)
-   - Generates random numbers.
-
-4. **Dog CEO API**
+3. **Dog CEO API**
    - URL: [Dog CEO](https://dog.ceo/dog-api/)
    - Provides random dog images.
 
-5. **Official Joke API**
-   - URL: [Official Joke API](https://official-joke-api.appspot.com/)
+4. **Official Joke API**
+   - URL: [Official Joke API](https://github.com/15Dkatz/official_joke_api?tab=readme-ov-file)
    - Returns random jokes.
 
-6. **Hindi Jokes API**
+5. **Hindi Jokes API**
    - URL: [Hindi Jokes API](https://hindi-jokes-api.onrender.com/)
    - Supplies random Hindi jokes.
 
-7. **API Ninjas Password Generator**
-   - URL: [API Ninjas](https://api.api-ninjas.com/v1/passwordgenerator)
+6. **API Ninjas Password Generator**
+   - URL: [API Ninjas](https://api-ninjas.com/api/passwordgenerator)
    - Generates random secure passwords.
 
-8. **Visual Crossing Weather API**
-   - URL: [Visual Crossing Weather](https://weather.visualcrossing.com/)
+7. **Visual Crossing Weather API**
+   - URL: [Visual Crossing Weather](https://www.visualcrossing.com/)
    - Provides weather data for a specified location.
 
-9. **Dice Rolling**
+8. **Dice Rolling**
    - URL: [Rrandom/integers](https://www.random.org/integers/)
-   - Simulates rolling a dice and displays the result.
+   - Generates random numbers.
 
 ## Tools Without API
 
@@ -84,10 +86,7 @@ Contributions are welcome! If you have any improvements, suggestions, or bug fix
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
 
-This version emphasizes that the website is built using HTML and JavaScript, and users can interact with the APIs directly from their web browsers without any server setup.
-```
 
 [license-shield]: https://img.shields.io/badge/License-MIT-red.svg
 [license-url]: https://github.com/iam-baivab/News-Scraping-using-BeautyfulSoup-Selenium-with-Django/blob/main/LICENSE
