@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     const searchBtn = document.getElementById('searchBtn');
     const clearBtn = document.getElementById('clearBtn');
+    const helpBtn = document.getElementById('helpBtn');
+    const gotoBtn = document.getElementById('gotoBtn');
+    const closeHelp = document.getElementById('closeHelp');
+    const closeHelpBtn = document.getElementById('closeHelpBtn');
     const nameInput = document.getElementById('nameInput');
     const locationInput = document.getElementById('locationInput');
     const universityDisplay = document.getElementById('universityDisplay');
+    const helpBox = document.getElementById('helpBox');
 
     searchBtn.addEventListener('click', function () {
         const name = nameInput.value.trim();
@@ -50,6 +55,22 @@ document.addEventListener('DOMContentLoaded', function () {
         nameInput.value = '';
         locationInput.value = '';
         universityDisplay.innerHTML = '';
+    });
+
+    helpBtn.addEventListener('click', function () {
+        helpBox.style.display = 'flex';
+    });
+
+    closeHelp.addEventListener('click', function () {
+        helpBox.style.display = 'none';
+    });
+
+    closeHelpBtn.addEventListener('click', function () {
+        helpBox.style.display = 'none';
+    });
+
+    gotoBtn.addEventListener('click', function () {
+        window.open('https://cors-anywhere.herokuapp.com/corsdemo', '_blank');
     });
 
     function displayUniversities(universities) {
