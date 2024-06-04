@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        let apiUrl = 'http://universities.hipolabs.com/search?'; // Changed to HTTPS
+        let apiUrl = 'http://universities.hipolabs.com/search?'; // Using HTTP
 
         if (name !== '' && country !== '') {
             apiUrl += `name=${encodeURIComponent(name)}&country=${encodeURIComponent(country)}`;
@@ -24,9 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
             apiUrl += `country=${encodeURIComponent(country)}`;
         }
 
+        // Add the CORS proxy
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        const fetchUrl = proxyUrl + apiUrl;
+
         universityDisplay.innerHTML = '<p>Loading...</p>'; // Show loading indicator
 
-        fetch(apiUrl)
+        fetch(fetchUrl)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
