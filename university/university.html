@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Search</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="university.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>University Search</h1>
+        </header>
+        <main>
+            <div class="input">
+                <div class="cards">
+                    <label for="nameInput">Enter University Name:</label>
+                    <input type="text" id="nameInput" placeholder="middle"/>
+                </div>
+                <div class="cards">
+                    <label for="locationInput">Enter Country Name:</label>
+                    <input type="text" id="locationInput" placeholder="turkey"/>
+                </div>
+                <button id="searchBtn">Search</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+            <div id="universityDisplay" class="university-display"></div>
+        </main>
+    </div>
+    <script src="university.js"></script>
+</body>
+</html>

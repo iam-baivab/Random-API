@@ -39,3 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('weatherBtn').addEventListener('click', () => {
     window.open('weather/weather.html', '_blank');
   });
+
+  document.getElementById('universityBtn').addEventListener('click', () => {
+    window.open('university/university.html', '_blank');
+  });
