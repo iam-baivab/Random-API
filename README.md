@@ -65,6 +65,10 @@ This project integrates the following APIs using JavaScript:
    - URL: [Rrandom/integers](https://www.random.org/integers/)
    - Generates random numbers.
 
+9. **University Search**
+   - URL: [Hipo University](https://github.com/hipo/university-domains-list)
+   - Provides a search endpoint wth autocomplete for university name or/and filter by country.
+
 ## Tools Without API
 
 This project also includes the following tools that do not require external APIs:
