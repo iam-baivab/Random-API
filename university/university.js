@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        let apiUrl = 'http://universities.hipolabs.com/search?';
+        let apiUrl = 'https://universities.hipolabs.com/search?'; // Changed to HTTPS
 
         if (name !== '' && country !== '') {
             apiUrl += `name=${encodeURIComponent(name)}&country=${encodeURIComponent(country)}`;
