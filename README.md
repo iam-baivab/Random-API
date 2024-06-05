@@ -93,6 +93,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 
 [license-shield]: https://img.shields.io/badge/License-MIT-red.svg
-[license-url]: https://github.com/iam-baivab/News-Scraping-using-BeautyfulSoup-Selenium-with-Django/blob/main/LICENSE
+[license-url]: https://github.com/iam-baivab/Random-API/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=blue
 [linkedin-url]: https://www.linkedin.com/in/baivabsarkar/
