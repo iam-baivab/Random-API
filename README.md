@@ -27,7 +27,7 @@ cd Random-API
 ```
 
 ## UI 🌐 [Live View](https://randomapi.pages.dev/)
-<img src="assets\readme.png">
+<img src="assets\readme2.png">
 
 ## APIs Used
 
