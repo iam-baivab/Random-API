@@ -70,7 +70,7 @@ This project integrates the following APIs using JavaScript:
    - Provides a search endpoint wth autocomplete for university name or/and filter by country.
 
 10. **Pet Finder**
-      - URL: [Hipo University](https://thecatapi.com/)
+      - URL: [The Cat API](https://thecatapi.com/)
       - Pet Finder provides a search endpoint to find and adopted pet.
 
 ## Tools Without API
