@@ -43,3 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('universityBtn').addEventListener('click', () => {
     window.open('university/university.html', '_blank');
   });
+
+  document.getElementById('petfinderBtn').addEventListener('click', () => {
+    window.open('petfinder/petfinder.html', '_blank');
+  });
