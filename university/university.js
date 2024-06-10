@@ -15,11 +15,21 @@ document.addEventListener('DOMContentLoaded', function () {
         const country = locationInput.value.trim();
 
         if (name === '' && country === '') {
-            alert('Please enter a university name, country name, or both.');
+            Toastify({
+                text: "Please enter a university name, country name, or both.",
+                duration: 5000,
+                close: true,
+                gravity: "bottom",
+                position: "center",
+                backgroundColor: "red",
+                style: {
+                  margin: '20px',
+                },
+              }).showToast();
             return;
         }
 
-        let apiUrl = 'http://universities.hipolabs.com/search?'; // Using HTTP
+        let apiUrl = 'http://universities.hipolabs.com/search?';
 
         if (name !== '' && country !== '') {
             apiUrl += `name=${encodeURIComponent(name)}&country=${encodeURIComponent(country)}`;
@@ -29,11 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
             apiUrl += `country=${encodeURIComponent(country)}`;
         }
 
-        // Add the CORS proxy
         const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         const fetchUrl = proxyUrl + apiUrl;
 
-        universityDisplay.innerHTML = '<p>Loading...</p>'; // Show loading indicator
+        universityDisplay.innerHTML = '<p>Loading...</p>';
 
         fetch(fetchUrl)
             .then(response => {
@@ -46,7 +55,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 displayUniversities(data);
             })
             .catch(error => {
-                console.error('Error fetching university data:', error);
+                Toastify({
+                    text: "Go to Help and enable CORS to fetch data.",
+                    duration: 5000,
+                    close: true,
+                    gravity: "bottom",
+                    position: "center",
+                    backgroundColor: "red",
+                    style: {
+                      margin: '20px',
+                    },
+                  }).showToast();
                 universityDisplay.innerHTML = '<p>Server is busy. Please try again later.</p>';
             });
     });
@@ -94,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
         });
 
-        universityHTML += '</div>'; // Close university-grid div
+        universityHTML += '</div>';
 
         universityDisplay.innerHTML = universityHTML;
     }

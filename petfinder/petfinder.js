@@ -39,17 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 displayFact(randomFact);
             })
             .catch(error => {
-                    Toastify({
-                      text: "Go to Help and enable CORS to fetch data.",
-                      duration: 5000,
-                      close: true,
-                      gravity: "bottom",
-                      position: "center",
-                      backgroundColor: "red",
-                      style: {
-                        margin: '20px',
-                      },
-                    }).showToast();
+                Toastify({
+                    text: "Go to Help and enable CORS to fetch data.",
+                    duration: 5000,
+                    close: true,
+                    gravity: "bottom",
+                    position: "center",
+                    backgroundColor: "red",
+                    style: {
+                      margin: '20px',
+                    },
+                  }).showToast();
                 factDisplay.innerHTML = '<p>Failed to fetch pet food facts. Please try again later.</p>';
             });
     }
