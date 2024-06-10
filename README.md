@@ -73,6 +73,14 @@ This project integrates the following APIs using JavaScript:
       - URL: [The Cat API](https://thecatapi.com/)
       - Pet Finder provides a search endpoint to find and adopted pet.
 
+11. **Cat Image**
+      - URL: [The Cat API](https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t)
+      - Provides random cat images.
+
+12. **Open Library**
+      - URL: [Open Library API](https://openlibrary.org/developers/api)
+      - Open Library is an web page for every book ever published. Discover more than 3M books.
+
 ## Tools Without API
 
 This project also includes the following tools that do not require external APIs:

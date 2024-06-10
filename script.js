@@ -47,3 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('petfinderBtn').addEventListener('click', () => {
     window.open('petfinder/petfinder.html', '_blank');
   });
+
+  document.getElementById('catImageBtn').addEventListener('click', () => {
+    window.open('catimage/catimage.html', '_blank');
+  });
+
+  document.getElementById('booklibraryBtn').addEventListener('click', () => {
+    window.open('library/library.html', '_blank');
+  });
