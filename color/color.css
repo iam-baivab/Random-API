@@ -99,4 +99,12 @@ button:hover {
     width: 20rem;
     height: 12rem;
   }
+
+  .otherformat > div {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+  }
 }
