@@ -107,4 +107,58 @@ button:hover {
     display: flex;
     justify-content: center;
   }
+
+  .overlay-content {
+    width: 80%;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-content h3 {
+  text-align: center;
+}
+
+.overlay-content li {
+  margin-top: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.helpBtn {
+  position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1a4bfc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
 }

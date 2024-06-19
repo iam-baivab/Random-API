@@ -85,3 +85,23 @@ function rgbToHsla(rgb) {
     const hsl = rgbToHsl(rgb);
     return hsl.replace('hsl', 'hsla').replace(')', ', 1)');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const helpBtn = document.getElementById('helpBtn');
+    const overlay = document.getElementById('overlay');
+    const closeBtn = overlay.querySelector('.close');
+
+    helpBtn.addEventListener('click', function() {
+        overlay.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', function() {
+        overlay.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === overlay) {
+            overlay.style.display = 'none';
+        }
+    });
+});
