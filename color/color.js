@@ -17,22 +17,24 @@ resetBtn.addEventListener('click', function () {
     window.location.reload();
 });
 
-copyBtns.forEach(button => {
-    button.addEventListener('click', function () {
-        const format = button.dataset.format;
-        const textToCopy = eval(format + 'Color.innerText');
-        navigator.clipboard.writeText(textToCopy)
-            .then(() => {
-                button.innerText = 'Copied!';
-                setTimeout(() => {
-                    button.innerText = 'Copy ' + format.toUpperCase();
-                }, 3000);
-            })
-            .catch(err => {
-                console.error('Failed to copy: ', err);
-            });
+copyBtns.forEach((copyBtn) => {
+    copyBtn.addEventListener("click", function () {
+      const textToCopy = this.previousElementSibling.innerText;
+      if (textToCopy) {
+        navigator.clipboard
+          .writeText(textToCopy)
+          .then(() => {
+            this.innerText = "Copied!";
+            setTimeout(() => {
+              this.innerText = "Copy " + this.dataset.format.toUpperCase();
+            }, 3000);
+          })
+          .catch((err) => {
+            console.error("Failed to copy: ", err);
+          });
+      }
     });
-});
+  });
 
 function getRandomColor() {
     const red = Math.floor(Math.random() * 256);
