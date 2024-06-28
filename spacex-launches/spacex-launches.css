@@ -12,6 +12,17 @@ body {
     padding: 1em 0;
   }
   
+  .filters {
+    margin: 1em 0;
+  }
+  
+  #search-bar, #year-filter {
+    padding: 0.5em;
+    margin: 0 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
   #launches-container {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +36,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 1em;
     padding: 1em;
-    max-width: 300px;
+    max-width: 400px;
     text-align: left;
   }
   
@@ -41,5 +52,24 @@ body {
   
   .launch-card p {
     margin: 0.5em 0;
+  }
+  
+  .launch-card a {
+    display: block;
+    margin: 0.5em 0;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .launch-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .failure {
+    color: red;
   }
   
