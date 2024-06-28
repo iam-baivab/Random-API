@@ -92,7 +92,6 @@ h1 {
   color: #dc3545;
 }
 
-/* Light Theme */
 body.light {
   background-color: #f4f4f4;
   color: #000;
@@ -117,7 +116,6 @@ body.light .launch-card a {
   color: #007bff;
 }
 
-/* Dark Theme */
 body.dark {
   background-color: #1c1e22;
   color: #ffffff;
@@ -142,7 +140,6 @@ body.dark .launch-card a {
   color: #1e90ff;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
   .launch-card {
     max-width: 100%;

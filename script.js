@@ -55,3 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('booklibraryBtn').addEventListener('click', () => {
     window.open('library/library.html', '_blank');
   });
+
+  document.getElementById('spacexBtn').addEventListener('click', () => {
+    window.open('spacex-launches/spacex-launches.html', '_blank');
+  });
