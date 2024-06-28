@@ -9,6 +9,13 @@
 <body>
   <header>
     <h1>SpaceX Launches</h1>
+    <div class="theme-selector">
+      <label for="theme">Theme:</label>
+      <select id="theme" onchange="changeTheme(this.value)">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
   </header>
   <main>
     <div class="filters">
