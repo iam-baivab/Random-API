@@ -117,15 +117,18 @@ function setInitialTheme() {
 
   if (savedTheme === 'light') {
     document.body.classList.add('light');
+    document.getElementById('theme').value = 'light';
   } else if (savedTheme === 'dark') {
     document.body.classList.add('dark');
+    document.getElementById('theme').value = 'dark';
   } else {
-    // Set theme based on system preference
     if (prefersDark) {
       document.body.classList.add('dark');
+      document.getElementById('theme').value = 'dark';
       localStorage.setItem('theme', 'dark');
     } else {
       document.body.classList.add('light');
+      document.getElementById('theme').value = 'light';
       localStorage.setItem('theme', 'light');
     }
   }
