@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocurrency Prices</title>
+  <link rel="stylesheet" href="cryptocurrency.css">
+</head>
+<body>
+  <header>
+    <h1>Cryptocurrency Prices</h1>
+    <div class="theme-selector">
+      <label for="theme-switch">Theme:</label>
+      <input type="checkbox" id="theme-switch" class="theme-switch" onclick="changeTheme()">
+      <label for="theme-switch" class="switch-label">
+        <span class="material-symbols-outlined light-icon">light_mode</span>
+        <span class="material-symbols-outlined dark-icon">dark_mode</span>
+      </label>
+    </div>
+  </header>
+  <main>
+    <div class="filters">
+      <input type="text" id="search-bar" placeholder="Search for a cryptocurrency...">
+    </div>
+    <div id="crypto-container"></div>
+  </main>
+  <script src="cryptocurrency.js"></script>
+</body>
+</html>
