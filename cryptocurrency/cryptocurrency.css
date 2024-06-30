@@ -116,7 +116,8 @@ body.light {
 }
 
 body.light th {
-  background-color: #fff;
+  background-color: #007bff;
+  color: white;
 }
 
 body.dark {
@@ -125,7 +126,8 @@ body.dark {
 }
 
 body.dark th {
-  background-color: #333;
+  background-color: #007bff;
+  color: white;
 }
 
 body.dark #search-bar {

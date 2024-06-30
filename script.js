@@ -59,3 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('spacexBtn').addEventListener('click', () => {
     window.open('spacex-launches/spacex-launches.html', '_blank');
   });
+
+  document.getElementById('cryptoBtn').addEventListener('click', () => {
+    window.open('cryptocurrency/cryptocurrency.html', '_blank');
+  });
