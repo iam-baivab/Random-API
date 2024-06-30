@@ -91,6 +91,7 @@ h1 {
 body.light {
   background-color: #f4f4f4;
   color: #000;
+  transition: background 0.2s linear;
 }
 
 body.light header {
@@ -115,6 +116,7 @@ body.light .launch-card a {
 body.dark {
   background-color: #1c1e22;
   color: #ffffff;
+  transition: background 0.2s linear;
 }
 
 body.dark header {
