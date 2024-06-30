@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let allCryptos = [];
   
   function fetchCryptoData() {
-    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd';
+    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&price_change_percentage=1h,24h,7d';
   
     fetch(url)
       .then(response => response.json())
@@ -19,24 +19,64 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function displayCryptoData(cryptos) {
-    const container = document.getElementById('crypto-container');
-    container.innerHTML = '';
+    const tbody = document.querySelector('#crypto-table tbody');
+    tbody.innerHTML = '';
   
-    for (const crypto of cryptos) {
-      const cryptoCard = document.createElement('div');
-      cryptoCard.classList.add('crypto-card');
+    cryptos.forEach(crypto => {
+      const row = document.createElement('tr');
   
-      const cryptoDetails = `
-        <img src="${crypto.image}" alt="${crypto.name}">
-        <h2>${crypto.name} (${crypto.symbol.toUpperCase()})</h2>
-        <p><strong>Current Price:</strong> $${crypto.current_price}</p>
-        <p><strong>Market Cap:</strong> $${crypto.market_cap.toLocaleString()}</p>
-        <p><strong>24h Change:</strong> ${crypto.price_change_percentage_24h.toFixed(2)}%</p>
-      `;
+      const rankCell = document.createElement('td');
+      rankCell.textContent = crypto.market_cap_rank;
+      row.appendChild(rankCell);
   
-      cryptoCard.innerHTML = cryptoDetails;
-      container.appendChild(cryptoCard);
-    }
+      const coinCell = document.createElement('td');
+      const coinDetails = document.createElement('div');
+      coinDetails.classList.add('coin-details');
+      const coinImg = document.createElement('img');
+      coinImg.src = crypto.image;
+      coinImg.alt = crypto.name;
+      const coinName = document.createElement('span');
+      coinName.innerHTML = `<strong>${crypto.name}</strong> (${crypto.symbol.toUpperCase()})`;
+      coinDetails.appendChild(coinImg);
+      coinDetails.appendChild(coinName);
+      coinCell.appendChild(coinDetails);
+      row.appendChild(coinCell);
+  
+      const priceCell = document.createElement('td');
+      priceCell.textContent = `$${crypto.current_price.toLocaleString()}`;
+      row.appendChild(priceCell);
+  
+      const hourChangeCell = document.createElement('td');
+      hourChangeCell.textContent = `${crypto.price_change_percentage_1h_in_currency ? crypto.price_change_percentage_1h_in_currency.toFixed(2) : '0.00'}%`;
+      row.appendChild(hourChangeCell);
+  
+      const dayChangeCell = document.createElement('td');
+      dayChangeCell.textContent = `${crypto.price_change_percentage_24h.toFixed(2)}%`;
+      row.appendChild(dayChangeCell);
+  
+      const weekChangeCell = document.createElement('td');
+      weekChangeCell.textContent = `${crypto.price_change_percentage_7d_in_currency.toFixed(2)}%`;
+      row.appendChild(weekChangeCell);
+  
+      const volumeCell = document.createElement('td');
+      volumeCell.textContent = `$${crypto.total_volume.toLocaleString()}`;
+      row.appendChild(volumeCell);
+  
+      const marketCapCell = document.createElement('td');
+      marketCapCell.textContent = `$${crypto.market_cap.toLocaleString()}`;
+      row.appendChild(marketCapCell);
+  
+      const buyCell = document.createElement('td');
+      const buyButton = document.createElement('a');
+      buyButton.classList.add('buy-button');
+      buyButton.href = `https://www.coingecko.com/en/coins/${crypto.id}`;
+      buyButton.target = '_blank';
+      buyButton.textContent = 'Buy';
+      buyCell.appendChild(buyButton);
+      row.appendChild(buyCell);
+  
+      tbody.appendChild(row);
+    });
   }
   
   function setupFilters() {
