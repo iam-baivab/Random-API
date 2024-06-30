@@ -129,6 +129,23 @@ body {
     background-color: #333;
   }
   
+  .price-change {
+    display: flex;
+    align-items: center;
+  }
+  
+  .price-change .material-symbols-outlined {
+    margin-left: 0.5rem;
+  }
+  
+  .price-change.positive {
+    color: #4caf50;
+  }
+  
+  .price-change.negative {
+    color: #f44336;
+  }
+  
   @media (max-width: 768px) {
     table {
       display: block;

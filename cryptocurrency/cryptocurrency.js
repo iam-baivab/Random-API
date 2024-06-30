@@ -47,15 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
       row.appendChild(priceCell);
   
       const hourChangeCell = document.createElement('td');
-      hourChangeCell.textContent = `${crypto.price_change_percentage_1h_in_currency ? crypto.price_change_percentage_1h_in_currency.toFixed(2) : '0.00'}%`;
+      hourChangeCell.innerHTML = formatPriceChange(crypto.price_change_percentage_1h_in_currency);
       row.appendChild(hourChangeCell);
   
       const dayChangeCell = document.createElement('td');
-      dayChangeCell.textContent = `${crypto.price_change_percentage_24h.toFixed(2)}%`;
+      dayChangeCell.innerHTML = formatPriceChange(crypto.price_change_percentage_24h);
       row.appendChild(dayChangeCell);
   
       const weekChangeCell = document.createElement('td');
-      weekChangeCell.textContent = `${crypto.price_change_percentage_7d_in_currency.toFixed(2)}%`;
+      weekChangeCell.innerHTML = formatPriceChange(crypto.price_change_percentage_7d_in_currency);
       row.appendChild(weekChangeCell);
   
       const volumeCell = document.createElement('td');
@@ -77,6 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
   
       tbody.appendChild(row);
     });
+  }
+  
+  function formatPriceChange(change) {
+    if (change === null || change === undefined) {
+      return '<span>0.00%</span>';
+    }
+    const isPositive = change >= 0;
+    const arrow = isPositive ? 'trending_up' : 'trending_down';
+    const className = isPositive ? 'positive' : 'negative';
+    return `<span class="price-change ${className}">${change.toFixed(2)}%<span class="material-symbols-outlined">${arrow}</span></span>`;
   }
   
   function setupFilters() {
