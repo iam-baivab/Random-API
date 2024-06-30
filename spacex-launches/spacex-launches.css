@@ -138,6 +138,45 @@ body.dark .launch-card a {
   color: #1e90ff;
 }
 
+.theme-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: none;
+}
+
+.switch-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch-label .material-symbols-outlined {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.light-icon {
+  color: #ffa722;
+}
+
+.dark-icon {
+  color: #4caf50;
+}
+
+.theme-switch:checked + .switch-label .light-icon {
+  display: none;
+}
+
+.theme-switch:not(:checked) + .switch-label .dark-icon {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .launch-card {
     max-width: 100%;

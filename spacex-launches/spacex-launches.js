@@ -114,38 +114,30 @@ function filterLaunches() {
 function setInitialTheme() {
   const savedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const themeSwitch = document.getElementById('theme-switch');
 
   if (savedTheme === 'light') {
     document.body.classList.add('light');
-    document.getElementById('light-mode-icon').style.display = 'none';
-    document.getElementById('dark-mode-icon').style.display = 'inline';
+    themeSwitch.checked = false;
   } else if (savedTheme === 'dark') {
     document.body.classList.add('dark');
-    document.getElementById('dark-mode-icon').style.display = 'none';
-    document.getElementById('light-mode-icon').style.display = 'inline';
+    themeSwitch.checked = true;
   } else {
     if (prefersDark) {
       document.body.classList.add('dark');
-      document.getElementById('dark-mode-icon').style.display = 'none';
-      document.getElementById('light-mode-icon').style.display = 'inline';
+      themeSwitch.checked = true;
       localStorage.setItem('theme', 'dark');
     } else {
       document.body.classList.add('light');
-      document.getElementById('light-mode-icon').style.display = 'none';
-      document.getElementById('dark-mode-icon').style.display = 'inline';
+      themeSwitch.checked = false;
       localStorage.setItem('theme', 'light');
     }
   }
 }
 
-function changeTheme(theme) {
+function changeTheme() {
+  const themeSwitch = document.getElementById('theme-switch');
+  const theme = themeSwitch.checked ? 'dark' : 'light';
   localStorage.setItem('theme', theme);
-  document.body.className = theme === 'light' ? 'light' : 'dark';
-  if (theme === 'light') {
-    document.getElementById('light-mode-icon').style.display = 'none';
-    document.getElementById('dark-mode-icon').style.display = 'inline';
-  } else {
-    document.getElementById('dark-mode-icon').style.display = 'none';
-    document.getElementById('light-mode-icon').style.display = 'inline';
-  }
+  document.body.className = theme;
 }

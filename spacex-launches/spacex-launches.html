@@ -12,10 +12,13 @@
   <header>
     <h1>SpaceX Launches</h1>
     <div class="theme-selector">
-      <span id="light-mode-icon" class="material-symbols-outlined" onclick="changeTheme('light')">light_mode</span>
-      <span id="dark-mode-icon" class="material-symbols-outlined" onclick="changeTheme('dark')">dark_mode</span>
+      <input type="checkbox" id="theme-switch" class="theme-switch" onclick="changeTheme()">
+      <label for="theme-switch" class="switch-label">
+        <span class="material-symbols-outlined light-icon">light_mode</span>
+        <span class="material-symbols-outlined dark-icon">dark_mode</span>
+      </label>
     </div>
-  </header>
+  </header> 
   
   <main>
     <div class="filters">
