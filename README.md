@@ -27,7 +27,7 @@ cd Random-API
 ```
 
 ## UI 🌐 [Live View](https://randomapi.pages.dev/)
-<img src="assets\readme2.png">
+<img src="assets\up_readme2.png">
 
 ## APIs Used
 
@@ -80,6 +80,14 @@ This project integrates the following APIs using JavaScript:
 12. **Open Library**
       - URL: [Open Library API](https://openlibrary.org/developers/api)
       - Open Library is an web page for every book ever published. Discover more than 3M books.
+
+13. **SpaceX API**
+      - URL: [SpaceX API](https://docs.spacexdata.com/)
+      - Open Source REST API for SpaceX launch, rocket, core, capsule, starlink, launchpad, and landing pad data.
+
+14. **CoinGecko API**
+      - URL: [CoinGecko API](https://www.coingecko.com/en/api)
+      - Reliable crypto market data through RESTful JSON endpoints.
 
 ## Tools Without API
 
