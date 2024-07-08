@@ -107,6 +107,12 @@ The website is designed to run directly in your web browser without any server s
 
 Contributions are welcome! If you have any improvements, suggestions, or bug fixes, please open an issue or submit a pull request.
 
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new pull request.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
