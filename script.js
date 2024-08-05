@@ -63,3 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('cryptoBtn').addEventListener('click', () => {
     window.open('cryptocurrency/cryptocurrency.html', '_blank');
   });
+
+  document.getElementById('adviceBtn').addEventListener('click', () => {
+    window.open('advice/advice.html', '_blank');
+  });
