@@ -67,3 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('adviceBtn').addEventListener('click', () => {
     window.open('advice/advice.html', '_blank');
   });
+
+  document.getElementById('comicBtn').addEventListener('click', () => {
+    window.open('comics/comics.html', '_blank');
+  });
