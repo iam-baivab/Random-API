@@ -17,7 +17,7 @@
                 <p class="slogan">Discover a random Pokémon from the vast world of Pokémon!</p>
                 <h2 id="pokemonName" class="pokemon-name"></h2>
                 <div class="pokemon-img-wrapper">
-                    <img id="pokemonImg" class="pokemon-img" src="" alt="">
+                    <img id="pokemonImg" class="pokemon-img" src="" alt="" style="display: none;">
                 </div>
                 <div id="loading" class="loading" style="display: none;">
                     <i class="fas fa-spinner fa-spin"></i> Please wait...
@@ -58,7 +58,10 @@
                         </tr>
                         <tr>
                             <th>Moves</th>
-                            <td id="pokemonMoves"></td>
+                            <td id="pokemonMoves">
+                                <ul id="movesList"></ul>
+                                <button id="viewMoreMoves" class="view-more-btn" style="display: none;">View More</button>
+                            </td>
                         </tr>
                         <tr>
                             <th>Species</th>

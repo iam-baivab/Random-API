@@ -117,8 +117,24 @@ body {
 .pokemon-info th {
     background-color: #f0f0f0;
     font-weight: bold;
+    vertical-align: top; /* Align header to top of cell */
 }
 
 .pokemon-info td {
     text-align: left;
+}
+
+.view-more-btn {
+    color: #007bff; /* Text color is blue */
+    background: none; /* No background color */
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: color 0.3s;
+    margin-top: 10px;
+}
+
+.view-more-btn:hover {
+    color: #0056b3; /* Darker blue on hover */
 }
