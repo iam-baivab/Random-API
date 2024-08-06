@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pokémon</title>
+    <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Random Pokémon</h1>
+            <button id="fetchBtn" class="fetch-btn">Get Random Pokémon</button>
+        </header>
+        <main class="main-content">
+            <div class="pokemon-container">
+                <p class="slogan">Discover a random Pokémon from the vast world of Pokémon!</p>
+                <h2 id="pokemonName" class="pokemon-name"></h2>
+                <div class="pokemon-img-wrapper">
+                    <img id="pokemonImg" class="pokemon-img" src="" alt="">
+                </div>
+                <div id="loading" class="loading" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i> Please wait...
+                </div>
+                <div id="pokemonInfo" class="pokemon-info" style="display: none;">
+                    <p id="pokemonType"></p>
+                    <p id="pokemonHeight"></p>
+                    <p id="pokemonWeight"></p>
+                    <p id="pokemonAbilities"></p>
+                    <div id="pokemonStats" class="pokemon-stats"></div>
+                    <p id="pokemonBaseExperience"></p>
+                    <p id="pokemonHeldItems"></p>
+                    <p id="pokemonLocationAreaEncounters"></p>
+                    <p id="pokemonMoves"></p>
+                    <p id="pokemonSpecies"></p>
+                    <p id="pokemonGameIndices"></p>
+                    <p id="pokemonEvolutionChain"></p>
+                    <p id="pokemonForms"></p>
+                    <p id="pokemonMoreInfo"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="pokemon.js"></script>
+</body>
+</html>
