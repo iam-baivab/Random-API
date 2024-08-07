@@ -89,6 +89,18 @@ This project integrates the following APIs using JavaScript:
       - URL: [CoinGecko API](https://www.coingecko.com/en/api)
       - Reliable crypto market data through RESTful JSON endpoints.
 
+15. **Advice Slip**
+      - URL: [Advice Slip JSON API](https://api.adviceslip.com/)
+      - Provides a endpoint wth random advice.
+
+16. **XKCD**
+      - URL: [XKCD API](https://xkcd.com/)
+      - A webcomic of romance, sarcasm, math, and language.
+
+16. **Pokeapi**
+      - URL: [Poke API](https://pokeapi.co/docs/v2)
+      - All the Pokémon data you'll ever need in one place, easily accessible through a modern free open-source RESTful API.
+      
 ## Tools Without API
 
 This project also includes the following tools that do not require external APIs:
