@@ -97,10 +97,13 @@ This project integrates the following APIs using JavaScript:
       - URL: [XKCD API](https://xkcd.com/)
       - A webcomic of romance, sarcasm, math, and language.
 
-16. **Pokeapi**
+17. **Pokeapi**
       - URL: [Poke API](https://pokeapi.co/docs/v2)
       - All the Pokémon data you'll ever need in one place, easily accessible through a modern free open-source RESTful API.
       
+18. **Spoonacular**
+      - URL: [Spoonacular API](https://spoonacular.com/food-api)
+      - The spoonacular Nutrition, Recipe, and Food API allows you to access over 5,000 recipes, thousands of ingredients.
 ## Tools Without API
 
 This project also includes the following tools that do not require external APIs:
