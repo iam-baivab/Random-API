@@ -75,3 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('pokemonBtn').addEventListener('click', () => {
     window.open('pokemon/pokemon.html', '_blank');
   });
+
+  document.getElementById('recipeBtn').addEventListener('click', () => {
+    window.open('recipeFinder/recipeFinder.html', '_blank');
+  });
